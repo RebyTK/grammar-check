@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grammar Guardian</title>
+    <link rel="stylesheet" href="popup-styles.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <div class="header">
+        <h1>📝 Grammar Guardian</h1>
+        <p class="subtitle">Check your grammar in real-time</p>
+      </div>
+
+      <div class="content">
+        <div class="info-section">
+          <h2>How it works:</h2>
+          <ul>
+            <li>✓ Click on any text area or input field</li>
+            <li>✓ Grammar issues will be detected automatically</li>
+            <li>✓ Click suggested corrections to apply them</li>
+            <li>✓ Powered by LanguageTool API</li>
+          </ul>
+        </div>
+
+        <div class="settings-section">
+          <h3>⚙️ Settings</h3>
+          <label class="checkbox-label">
+            <input type="checkbox" id="autoCheck" checked />
+            <span>Auto-check on typing</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="showAdvanced" checked />
+            <span>Show advanced suggestions</span>
+          </label>
+        </div>
+
+        <div class="status-section">
+          <p id="status" class="status-text">🟢 Extension Active</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Version 1.0.0</p>
+        <p>
+          <a href="https://languagetoolplus.com" target="_blank"
+            >Powered by LanguageTool</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
